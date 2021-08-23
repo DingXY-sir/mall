@@ -1,10 +1,14 @@
 <template>
-  <div class="">这是Home页面</div>
+  <div class="home-navbar">
+    <NavBar><div slot="center">购物街</div></NavBar>
+  </div>
 </template>
-
 <script>
+import NavBar from 'components/common/navbar/NavBar'
 export default {
-  components: {},
+  components: {
+    NavBar
+  },
   props: {},
   data() {
     return {
@@ -18,4 +22,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.home-navbar{
+  background-color:#F19DA3;
+  color:#fff;
+}
 </style>
